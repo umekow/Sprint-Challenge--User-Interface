@@ -71,17 +71,15 @@ p {
     margin: 0 auto;
 }
 .nav{
-    display:flex; 
-    align-items:flex-end; 
-    justify-content:space-between; 
     
+    display:inline; 
     margin: 10px 0px 40px 0px; 
 }
 
 nav{
+    width: 60%; 
     display:flex; 
-    justify-content:space-around;
-      
+    justify-content:space-between; 
 }
 
 
