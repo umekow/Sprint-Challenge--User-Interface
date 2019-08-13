@@ -70,7 +70,43 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+.nav{
+    
+    display: flex; 
+    justify-content: space-between;
+    align-items:flex-end; 
+    margin: 10px 0px 40px 0px; 
+}
 
+@keyframes color{
+    0%{border-bottom: 4px solid green;}
+    25%{border-bottom: 4px solid blue;}
+    50%{border-bottom: 4px solid yellow;}
+    75%{border-bottom: 4px solid purple;}
+    100%{border-bottom: 4px solid red;}
+}
+.logo {
+    animation: color 10s; 
+    
+}
+
+nav{
+    width: 60%; 
+    display:flex; 
+    justify-content:space-between; 
+}
+
+
+.nav a {
+    color: black; 
+    text-decoration: none;
+    
+
+}
+
+.border-bottom{
+    border-bottom: 1px dashed black;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,15 +115,21 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-about{
+    padding: 15px; 
+    margin-bottom:20px; 
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    margin-top:20px; 
 }
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    
 }
 
 .middle-content h2 {
@@ -95,6 +137,36 @@ p {
     margin-bottom: 0;
 }
 
+.services .border-bottom{
+    margin-bottom: 40px; 
+    padding-bottom: 20px; 
+}
+button{
+    background:white; 
+    color:black;
+    font-size: 12px; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    padding:10px 20px; 
+ 
+}
+.services{
+    display:flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+.services p, h2{
+    padding:20px 0px; 
+    text-align:left; 
+}
+.services div{
+    width:48%;
+    display:flex; 
+    flex-direction:column; 
+    
+
+    
+}
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -112,14 +184,53 @@ p {
     justify-content: center;
 }
 
+/*box colors*/
+
+.middle-content .boxes .box.box1{
+    background:teal; 
+}
+.middle-content .boxes .box.box2{
+    background:gold; 
+}
+.middle-content .boxes .box.box3{
+    background:cadetblue; 
+}
+.middle-content .boxes .box.box4{
+    background:coral; 
+}
+.middle-content .boxes .box.box5{
+    background:crimson; 
+}
+.middle-content .boxes .box.box6{
+    background:forestgreen; 
+}
+.middle-content .boxes .box.box7{
+    background:darkorchid; 
+}
+.middle-content .boxes .box.box8{
+    background:hotpink; 
+}.middle-content .boxes .box.box9{
+    background:indigo; 
+}
+.middle-content .boxes .box.box10{
+    background:dodgerblue; 
+}
+
+
+
 .bottom-content {
-    display: flex;
+    
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+.bottom-content.bottom-about{
+    display:flex; 
+    
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
+    
 }
 
 .bottom-content .text-container:last-child {
@@ -144,3 +255,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
